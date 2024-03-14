@@ -1,6 +1,8 @@
 package gateway
 
+import "walletcore/internal/entity"
+
 type ClientGateway interface {
-	Get(id string) (*Client, error)
-	Save(client *Client) error
+	Get(id string) (*entity.Client, error)
+	Save(client *entity.Client) error
 }
